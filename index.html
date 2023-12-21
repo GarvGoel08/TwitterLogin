@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin to X</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="path-logo">
+            <img class="path-logo-img" src="./imgs/Twitter-X-White-Logo-PNG.png"/>
+        </div>
+        <div class="login-text">Sign in to X</div>
+        <button class="login-button">
+            <div class="google-logo logo"></div>
+            <span class="login-button-text">Sign In with Google</span>
+          </button>
+          
+          <button class="login-button">
+            <div class="apple-logo logo"></div>
+            Sign In with Apple
+          </button>
+          
+        <div class="or-divider">
+            <div class="divider-line"></div>
+            <span>or</span>
+            <div class="divider-line"></div>
+        </div>
+        <div class="input-container">
+            <input type="text" class="custom-input" placeholder=" ">
+            <label class="input-label">Login Now</label>
+          </div>
+          
+            
+              
+        <button class="sign-up-button">Next</button>
+        <button class="forgot-password-button">Forgot Password</button>
+        <div class="signup-text">
+            Don't have an account? <a href="#">Sign Up</a>
+          </div>
+          
+    </div>
+    <script>
+        document.querySelector('.custom-input').addEventListener('input', function () {
+          if (this.value.trim() !== '') {
+            this.nextElementSibling.classList.add('active');
+          } else {
+            this.nextElementSibling.classList.remove('active');
+          }
+        });
+      </script>
+</div>
+</body>
+
+</html>
